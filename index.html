@@ -39,21 +39,25 @@
             </ul>
           </li>
         </ul>
-        <form role="search">
+        <form role="search" class="d-lg-block collapse">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none p-lg-3">
+          <img src="https://github.com/msilvafreitas.png" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>Profile</strong>
+        </a>
       </div>
     </div>
   </nav>
   <div class="container-fluid">
     <div class="row">
-      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"    >
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-lg-block bg-light sidebar collapse bg-dark">
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link" aria-current="page" href="#">
                 <span data-feather="home" class="align-text-bottom"></span>
-                Inbox
+                Inbox (0)
               </a>
             </li>
             <li class="nav-item">
@@ -88,7 +92,7 @@
             </li>
           </ul>
   
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white text-uppercase">
             <span>Matches Reports</span>
             <a class="link-secondary" href="#" aria-label="Add a new report">
               <span data-feather="plus-circle" class="align-text-bottom"></span>
@@ -122,18 +126,18 @@
           </ul>
         </div>
       </nav>
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <main class="col-lg-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom text-white">
         <h2>Welcome!</h2>
         <p>July 2022</p>
       </div>
       
-      <div class="jumbotron p-3 p-md-4 text-white rounded bg-dark">
+      <div class="jumbotron p-3 p-md-4 text-white rounded bg-dark mb-3">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Guajaguares x Vulpters</h1>
-          <p class="lead my-3">Sarabi Stadium, 16h00</p>
+          <h1 class="display-4 font-italic">Guajaguares SC x Vulpters FC</h1>
+          <p class="lead my-3">Sarabi Stadium, 4pm</p>
           <p class="lead my-2">League</p>
-          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">See competition</a></p>
+          <p class="lead mb-0"><a href="#league" class="text-white font-weight-bold">See competition</a></p>
         </div>
       </div>
       <div class="row mb-2">
@@ -141,7 +145,7 @@
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary">League</strong>
-              <h3 class="mb-0">
+              <h3 class="mb-0" id="league">
                 First League
               </h3>
               <div class="mb-1 text-muted">Season 2022</div>
@@ -268,7 +272,7 @@
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-success">Cup</strong>
-              <h3 class="mb-0">
+              <h3 class="mb-0" id="cup">
                 National Cup
               </h3>
               <div class="mb-1 text-muted">Season 2022</div>
@@ -305,14 +309,26 @@
               <table class="table table-hover align-self-center">
                 <tbody>
                   <tr> 
-                    <td class="text-center">A</td>
+                    <td>1</td>
+                    <td class="text-center">Winner A</td>
                     <th class="text-center" scope="row">x</th>
-                    <td class="text-center">B</td>
+                    <td class="text-center">Winner B</td>
                   </tr>
-                  <tr>       
-                    <td class="text-center">C</td>
+                  <tr>   
+                    <td>2</td>    
+                    <td class="text-center">Winner C</td>
                     <th class="text-center" scope="row">x</th>
-                    <td class="text-center">D</td>
+                    <td class="text-center">Winner D</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="card-text mb-auto align-self-center p-4">Final</h4>
+              <table class="table table-hover align-self-center">
+                <tbody>
+                  <tr> 
+                    <td class="text-center">Winner 1</td>
+                    <th class="text-center" scope="row">x</th>
+                    <td class="text-center">Winner 2</td>
                   </tr>
                   
                 </tbody>
@@ -320,6 +336,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container text-center">
+        <span class="text-white">Created by Matheus Freitas <a href="https://linkedin.com/in/msilvafreitas"><img src="https://cdn-icons.flaticon.com/png/512/3992/premium/3992606.png?token=exp=1657755294~hmac=513969f0c52d5b378c5cb54f7480b491" alt="LinkedIn" width="20" height="20" class="m-1"> </a><a href="https://github.com/msilvafreitas"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="20" height="20" class="m-1"></a></span>
       </div>
     </main>
 
