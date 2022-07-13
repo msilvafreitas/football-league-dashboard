@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;1,700&display=swap');
+
+body {
+    
+    background-color: rgb(0, 0, 0);
+    font-family: 'Arvo', serif;
+}
+
+.bg-dark {
+    background-image: url('https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6684529/910/607/m2/fpnw/wm0/s6oikpwiibccsrizyjzsktl9t6yuu4smqf1dwbckxhwky1zplpb6rhjwli4ngvng-.jpg?1563209152&s=fa3a6f33a6e599c2cceaa0336c96292e');
+    background-position: unset;
+    background-blend-mode: overlay;
+}
+
+.nav-link {
+    color: rgb(124, 124, 124);
+}
+
+.active {
+    font-weight: bold;
+}
